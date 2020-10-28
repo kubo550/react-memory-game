@@ -34,7 +34,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba($color: #000000, $alpha: 0.8);
+  background-color: rgba($color: #000000, $alpha: 0.6);
   z-index: 2;
 }
 .popup {
@@ -47,4 +47,8 @@ body {
   background-color: skyblue;
   border-radius: 35px;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
