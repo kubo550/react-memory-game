@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(38, 43, 48);
+}
+.board {
+  width: 820px;
+  height: 680px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: crimson;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+  gap: 0.8rem;
+}
+.cell {
+  background: coral;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 26px;
+  &.hidden {
+    visibility: hidden;
+  }
+}
+.popup-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  z-index: 2;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-color: skyblue;
+  border-radius: 35px;
+  z-index: 3;
+}
